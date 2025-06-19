@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 import { Factory } from 'fishery';
 
 import prisma from '../client';
-import { User } from '../generated/client';
+import { User } from '../generated/client/client';
 
 export const userFactory = Factory.define<User>(({ sequence, onCreate }) => {
   onCreate(async (user) => {
