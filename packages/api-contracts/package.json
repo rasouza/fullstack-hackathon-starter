@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "setup": "npm run build",
     "build": "tsup"
   },
   "devDependencies": {

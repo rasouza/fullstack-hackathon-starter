@@ -56,34 +56,16 @@ docker compose up -d
 
 This will start a local PostgreSQL instance.
 
-### 4. Setup the database
+### 4. Setup the monorepo
 
 ```bash
-cd apps/backend
-cp .env.example .env
-npm run db:generate      # Generate Prisma client
-npm run db:migrate       # Run migrations
-npm run db:seed          # Seed the database with sample data
-```
-
-### 5. Run the backend (NestJS API)
-
-```bash
-npm run start:dev
+cp apps/backend/.env.example apps/backend/.env
+npm run setup
 ```
 
 The backend will be available at [http://localhost:3001](http://localhost:3001).
 
 A OpenAPI spec is available at [http://localhost:3001/docs](http://localhost:3001/docs)
-
-### 6. Run the frontend (React app)
-
-Open a new terminal:
-
-```bash
-cd apps/frontend
-npm run dev # or npm run start
-```
 
 The frontend will be available at [http://localhost:3000/dashboard](http://localhost:3000/dashboard).
 

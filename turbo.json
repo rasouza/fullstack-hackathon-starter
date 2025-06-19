@@ -19,6 +19,10 @@
     },
     "format": {
       "dependsOn": ["^format"]
+    },
+    "setup": {
+      "dependsOn": ["^setup"],
+      "outputs": []
     }
   }
 }
